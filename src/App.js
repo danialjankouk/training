@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 //components
-import Card from "./components/Card";
+import Content from "./components/Content";
 const App = () => {
   return (
-    <div className="bg-slate-200 h-screen container flex justify-center items-center mx-auto">
-      <Card/>
+    <div className="bg-slate-200 h-screen flex items-center flex-col pt-10">
+      <Content />
     </div>
   );
 };
