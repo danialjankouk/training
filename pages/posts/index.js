@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => {
+const PostHome = () => {
     return (
-        <div>
-            this is home page in posts
-        </div>
+      <div>
+        this is home page in <b>posts</b>
+      </div>
     );
 };
 
-export default Home;
+export default PostHome;

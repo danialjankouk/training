@@ -1,6 +1,4 @@
 import React from 'react';
-//components
-import About from './About';
 const HomePage = () => {
   return (
     <div>
