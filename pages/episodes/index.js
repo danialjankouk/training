@@ -28,7 +28,7 @@ export const getStaticProps = async () => {
   const { data } = await axios.get("https://rickandmortyapi.com/api/episode");
   return {
     props: {
-      rickMorty: data,
+      rickMorty: data
     },
   };
 };

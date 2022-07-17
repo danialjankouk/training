@@ -1,6 +1,12 @@
 import axios from 'axios';
 import React from 'react';
-const EpisodeId = ({rickMorty}) => {
+import { useRouter } from "next/router";
+
+const EpisodeId = ({ rickMorty }) => {
+    const router = useRouter();
+    if (router.isFallback) {
+      return <div>loading ...</div>;
+    }
     return (
       <div>
         <h1>date : {rickMorty.air_date}</h1>
@@ -13,7 +19,6 @@ const EpisodeId = ({rickMorty}) => {
 };
 export default EpisodeId;
 
-
 export const getStaticPaths = async () => {
     const { data } = await axios.get("https://rickandmortyapi.com/api/episode")
     const paths = data.results.map((episode) => {
@@ -21,18 +26,23 @@ export const getStaticPaths = async () => {
             params: {episodeId : `${episode.id}`},
         }
     })
-    return {
-        paths : paths,
-        fallback: false
-    }
+  return {
+    paths: [
+      { params: { episodeId: "1" } },
+      { params: { episodeId: "2" } },
+      { params: { episodeId: "3" } },
+    ],
+    // paths : paths,
+    fallback: true,
+  };
 }
 
 export const getStaticProps = async (context) => {
-    const { params } = context
+  const { params } = context
   const { data } = await axios.get(`https://rickandmortyapi.com/api/episode/${params.episodeId}`);
   return {
     props: {
-      rickMorty: data,
+      rickMorty: data
     },
   };
 };

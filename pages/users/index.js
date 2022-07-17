@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
-
-const UsersList = ({rickMorty}) => {
+const UsersList = ({ rickMorty }) => {
   return (
     <div>
       {rickMorty.results.map((user) => {
