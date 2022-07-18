@@ -33,7 +33,7 @@ export const getStaticPaths = async () => {
       { params: { episodeId: "3" } },
     ],
     // paths : paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
