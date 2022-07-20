@@ -1,13 +1,9 @@
 import React from "react";
-import Link from "next/dist/client/link";
-const HomePage = () => {
+import Link from "next/link";
+const index = () => {
   return (
     <div>
-      <h1>this is HomePage </h1>
-      <br></br>
-      <Link href="/episodes">
-        <a>go to episodes?</a>
-      </Link>
+      this is Home page
       <br></br>
       <Link href="/users">
         <a>go to users?</a>
@@ -20,8 +16,16 @@ const HomePage = () => {
       <Link href="/blogs">
         <a>go to blogs?</a>
       </Link>
+      <br></br>
+      <Link href="/episodes">
+        <a>go to episodes?</a>
+      </Link>
+      <br></br>
+      <Link href="/profile">
+        <a>go to profile?</a>
+      </Link>
     </div>
   );
 };
 
-export default HomePage;
+export default index;

@@ -10,7 +10,7 @@ const Blogs = ({ blogs }) => {
         return (
           <div key={blog.id}>
             <h2>
-              category :{" "}
+              category :
               <Link href={`/blogs/${blog.category}`}>
                 <a>
                   <b>{blog.category}</b>
@@ -25,7 +25,6 @@ const Blogs = ({ blogs }) => {
     </div>
   );
 };
-
 export default Blogs;
 
 export const getServerSideProps = async () => {

@@ -20,7 +20,6 @@ const Category = ({ blogs, category }) => {
     </div>
   );
 };
-
 export default Category;
 
 export const getServerSideProps = async (context) => {
