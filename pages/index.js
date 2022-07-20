@@ -12,6 +12,14 @@ const HomePage = () => {
       <Link href="/users">
         <a>go to users?</a>
       </Link>
+      <br></br>
+      <Link href="/products">
+        <a>go to products?</a>
+      </Link>
+      <br></br>
+      <Link href="/blogs">
+        <a>go to blogs?</a>
+      </Link>
     </div>
   );
 };

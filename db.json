@@ -18,5 +18,25 @@
       "price": 4000,
       "description" : "description 3"
     }
+  ],
+  "blogs":[
+       {
+      "id": 1,
+      "category" : "Front-End",
+      "title" : "What is javascript",
+      "description" : "description 1"
+    },
+    {
+      "id": 2,
+      "category" : "Back-End",
+      "title" : "Deffrent types of database",
+      "description" : "description 2"
+    },
+    {
+      "id": 3,
+      "category" : "node.js",
+      "title" : "What is Node.js",
+      "description" : "description 3"
+    }
   ]
 }
