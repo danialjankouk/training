@@ -1,8 +1,6 @@
-let age: number = 30_45;
-let course: string = "this is shit";
-let is_public: boolean = true; 
-let vel;
+//tuple 
+let test: [number, string, boolean] = [2, "daniyal", false]
 
-const render = (fun: any,test: string) => {
-    console.log(fun,test);
-}
+//bug in typescript
+test.push(3,5)
+console.log(test);

@@ -1,9 +1,5 @@
 "use strict";
-let age = 3045;
-let course = "this is shit";
-let is_public = true;
-let vel;
-const render = (fun, dick) => {
-    console.log(fun, dick);
-};
+let test = [2, "daniyal", false];
+test.push(3, 5);
+console.log(test);
 //# sourceMappingURL=index.js.map
