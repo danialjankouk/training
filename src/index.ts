@@ -1,6 +1,11 @@
-//tuple 
-let test: [number, string, boolean] = [2, "daniyal", false]
+//enum
+enum Syles { grunge = 1, vintage = "noce", boho = 2 };
+const myStyle: Syles = Syles.vintage
 
-//bug in typescript
-test.push(3,5)
-console.log(test);
+console.log(myStyle);
+
+//better code
+const enum Color { green = 1, blue , yellow };
+const myColor: Color = Color.yellow
+
+console.log(myColor);
