@@ -4,3 +4,6 @@ export const increase = () => {
 export const decrease = () => {
   return { type: "DECREASE" };
 };
+export const reset = () => {
+  return { type: "RESET" };
+};
