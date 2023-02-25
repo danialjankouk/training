@@ -9,4 +9,4 @@ let myScore: [name: string, ...score: number[]];
 myScore = ["asasd", 58, 465, 165, 1, 4, 51, 56];
 
 let books: [name: string, ...genre: [horror: string, fantasy: string]];
-books = ["shit","sfa","aage"]
+books = ["shit", "sfa", "aage"];
